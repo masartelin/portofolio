@@ -134,3 +134,13 @@ function initTestimonialSlider() {
 
     setInterval(() => goToSlide(currentSlide + 1), 5000);
 }
+
+const toast = document.getElementById('toast-success');
+if (toast) {
+    requestAnimationFrame(() => toast.classList.add('show'));
+
+    setTimeout(() => {
+        toast.classList.remove('show');
+        setTimeout(() => toast.remove(), 400);
+    }, 4000);
+}

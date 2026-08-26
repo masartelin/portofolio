@@ -49,16 +49,16 @@
             </p>
 
             <div class="social-icons">
-                <a href="https://github.com/masartelin" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/lvnymock" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
 
-           <div class="hero-actions">
+            <div class="hero-actions">
                 <a href="#contact" class="btn">Hubungi Saya</a>
-                <a href="{{ asset('cv_wahyu_dimasda.pdf') }}" class="btn btn-outline" download>Download CV</a>
                 <a href="#journey" class="btn btn-outline">Lihat Perjalanan</a>
-          </div>
-            
+            </div>
         </div>
     </section>
 
@@ -314,7 +314,10 @@
         </div>
 
         @if (session('success'))
-            <div class="alert alert-success">{{ session('success') }}</div>
+            <div id="toast-success" class="toast toast-success">
+                <i class="fas fa-circle-check"></i>
+                <span>{{ session('success') }}</span>
+            </div>
         @endif
 
         <form class="contact-form" action="{{ route('contact.store') }}" method="POST">
@@ -340,8 +343,10 @@
     {{-- Footer --}}
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://github.com/masartelin" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/lvnymock" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; Wahyu Dimasda — Portofolio Digital</p>
     </footer>
