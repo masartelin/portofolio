@@ -257,7 +257,23 @@
                     <div class="testimonial-box quote-box">
                         <i class="fas fa-quote-left quote-mark"></i>
                         <p>
-                            Hinaan orang tidak membuatmu jatuh. Pujian orang tidak membuatmu tumbuh.
+                            Musuh sering kali lebih mengenalmu daripada dirimu sendiri.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-box quote-box">
+                        <i class="fas fa-quote-left quote-mark"></i>
+                        <p>
+                            Rasa sakit adalah guru terbesarku.
+                        </p>
+                    </div>
+                </div>
+                <div class="testimonial-slide">
+                    <div class="testimonial-box quote-box">
+                        <i class="fas fa-quote-left quote-mark"></i>
+                        <p>
+                            Bintang tidak bisa bersinar tanpa adanya kegelapan.
                         </p>
                     </div>
                 </div>
@@ -266,8 +282,7 @@
                     <div class="testimonial-box quote-box">
                         <i class="fas fa-quote-left quote-mark"></i>
                         <p>
-                            Menginginkan hasil tanpa mau melewati prosesnya sama saja seperti
-                            mengharapkan panen tanpa pernah menanam.
+                            Kesalahan adalah pelajaran untuk masa depan.
                         </p>
                     </div>
                 </div>
