@@ -49,10 +49,8 @@
             </p>
 
             <div class="social-icons">
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/masartelin" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/lvnymock" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
 
             <div class="hero-actions">
@@ -358,10 +356,8 @@
     {{-- Footer --}}
     <footer class="footer">
         <div class="social-icons">
-            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/masartelin" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/lvnymock" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
         <p>&copy; Wahyu Dimasda — Portofolio Digital</p>
     </footer>
