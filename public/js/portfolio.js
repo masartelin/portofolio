@@ -4,7 +4,32 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNavLink();
     initHeaderScroll();
     initTestimonialSlider();
+    initScrollReveal();
 });
+
+function initScrollReveal() {
+    const targets = document.querySelectorAll(
+        '.heading, .section-lead, .home-img, .home-content, .about-img, .about-content, ' +
+        '.service-box, .journey-card, .skill-tags, .testimonial-wrapper, .contact-meta-item, .contact-form'
+    );
+
+    if (!('IntersectionObserver' in window)) return;
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.12 });
+
+    targets.forEach((el, index) => {
+        el.classList.add('reveal');
+        el.style.transitionDelay = `${(index % 4) * 80}ms`;
+        observer.observe(el);
+    });
+}
 
 function initTypingEffect() {
     const typingElement = document.querySelector('.typing-text');
