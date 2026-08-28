@@ -25,7 +25,7 @@
     <section class="home" id="home">
         <div class="home-img">
             <div class="img-wrapper">
-            <img src="{{ asset('img/wahyu dimasda.jpg') }}" alt="Wahyu Dimasda">
+                <img src="{{ asset('img/wahyu dimasda.jpg') }}" alt="Wahyu Dimasda">
             </div>
         </div>
 
@@ -49,8 +49,8 @@
             </p>
 
             <div class="social-icons">
-                <a href="https://github.com/masartelin" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="https://www.instagram.com/lvnymock" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/masartelin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/lvnymock" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
             </div>
 
             <div class="hero-actions">
@@ -67,8 +67,7 @@
         <div class="about-container">
             <div class="about-img">
                 <div class="img-wrapper about-img-wrapper">
-            <img src="{{ asset('img/wahyu dimasda2.jpg') }}" alt="Wahyu Dimasda">
-                   
+                    <img src="{{ asset('img/wahyu dimasda2.jpg') }}" alt="Wahyu Dimasda">
                 </div>
             </div>
 
@@ -346,19 +345,20 @@
             <textarea name="message" cols="30" rows="10" placeholder="Pesan Anda" required>{{ old('message') }}</textarea>
             <button type="submit" class="btn">Kirim Pesan</button>
 
-            @error('name') <p style="color: red; font-size: 14px;">{{ $message }}</p> @enderror
-            @error('email') <p style="color: red; font-size: 14px;">{{ $message }}</p> @enderror
-            @error('subject') <p style="color: red; font-size: 14px;">{{ $message }}</p> @enderror
-            @error('message') <p style="color: red; font-size: 14px;">{{ $message }}</p> @enderror
+            @error('name') <p class="form-error">{{ $message }}</p> @enderror
+            @error('email') <p class="form-error">{{ $message }}</p> @enderror
+            @error('phone') <p class="form-error">{{ $message }}</p> @enderror
+            @error('subject') <p class="form-error">{{ $message }}</p> @enderror
+            @error('message') <p class="form-error">{{ $message }}</p> @enderror
         </form>
     </section>
 
     {{-- Footer --}}
     <footer class="footer">
         <div class="social-icons">
-            <a href="https://github.com/masartelin" aria-label="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://www.instagram.com/lvnymock" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/masartelin" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/lvnymock" target="_blank" rel="noopener" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
         </div>
-        <p>&copy; Wahyu Dimasda — Portofolio Digital</p>
+        <p>&copy; {{ date('Y') }} Wahyu Dimasda — Portofolio Digital</p>
     </footer>
 @endsection
